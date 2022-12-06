@@ -22,15 +22,15 @@
                         </thead>
                     
                         <tbody>
-                          <tr>
-                            <th scope="row">{{}</th>
-                            <td>{{}}</td>
-                            <td>{{}}</td>
-                            <td>{{}}</td>
-                            <td>{{}}</td>
-                            <td>{{}}</td>
-                            <td>{{}}</td>
-                            <td>{{}}</td>
+                          <tr *ngFor="let i of data">
+                            <th scope="row">{{i.productCode}}</th>
+                            <td>{{i.productName}}</td>
+                            <td>{{i.manufDate}}</td>
+                            <td>{{i.expDate}}</td>
+                            <td>{{i.sellerName}}</td>
+                            <td>{{i.brand}}</td>
+                            <td>{{i.distributor}}</td>
+                            <td>{{i.price}}</td>
                           </tr>
                         </tbody>
                     
